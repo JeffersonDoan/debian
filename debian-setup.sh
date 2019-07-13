@@ -15,7 +15,6 @@ sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
 # Create backup and install repositories
 sudo cp /etc/apt/sources.list{,.bak}
 sudo cp ./sources.list /etc/apt/sources.list
-rm ./sources.list
 
 # Add 32bit arch (Package support)
 sudo dpkg --add-architecture i386
@@ -30,7 +29,7 @@ sudo apt dist-upgrade -y
 wget https://raw.githubusercontent.com/laurent22/joplin/master/Joplin_install_and_update.sh && sudo chmod +x Joplin_install_and_update.sh && ./Joplin_install_and_update.sh
 
 # Install packages from debian.packages
-sudo apt install $(cat ./debian.packages) -y
+sudo apt install $(cat ~/debian.packages) -y
 
 # Disable Wayland and use Xorg
 sudo sed -i '/WaylandEnable/s/^#//g' /etc/gdm3/daemon.conf
@@ -41,3 +40,8 @@ sudo apt autoremove gnome-games -y
 
 # Cleanup package dependencies
 sudo apt autoremove
+
+# Cleanup extra downloaded files
+rm ./debian.packages
+rm ./sources.list
+rm ./Joplin_install_and_update.sh
