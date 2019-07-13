@@ -29,3 +29,6 @@ deb http://www.deb-multimedia.org buster main non-free
 
 # Mozilla Firefox
 deb http://http.debian.net/debian unstable main
+
+# Spotify
+deb http://repository.spotify.com stable non-free
