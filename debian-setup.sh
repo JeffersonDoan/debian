@@ -9,7 +9,7 @@ cd ~
 cd /etc/apt
 sudo cp /etc/apt/sources.list{,.bak}
 wget https://raw.githubusercontent.com/JeffersonDoan/debian-setup/master/sources.list > /etc/apt/sources.list.d
-rm sources.list
+sudo rm sources.list
 cd ~
 
 # Update cache for package installs
