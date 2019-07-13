@@ -8,7 +8,7 @@ cd ~
 # Install repositories
 sudo cp /etc/apt/sources.list{,.bak}
 wget https://raw.githubusercontent.com/JeffersonDoan/debian-setup/master/sources.list
-sudo cp sources.list /etc/apt/sources.list
+sudo cp ./sources.list /etc/apt/sources.list
 
 
 # Update cache for package installs
