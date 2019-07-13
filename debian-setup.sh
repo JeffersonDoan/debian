@@ -3,7 +3,7 @@
 cd ~
 
 # Retrieve data for the setup script
-wget https://raw.githubusercontent.com/JeffersonDoan/fedora-setup/master/debian.packages
+#wget https://raw.githubusercontent.com/JeffersonDoan/fedora-setup/master/debian.packages
 
 # Install repositories
 sudo cp /etc/apt/sources.list{,.bak}
