@@ -7,8 +7,9 @@ wget https://raw.githubusercontent.com/JeffersonDoan/debian-setup/master/debian.
 wget https://raw.githubusercontent.com/JeffersonDoan/debian-setup/master/sources.list
 wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2012.05.05_all.deb -O deb-multimedia-keyring.deb
 
-# Add Firefox and multimedia key
+# Add Firefox, Spotify, and Multimedia key
 sudo apt-key adv --keysever ha.pool.sks-keyservers.net --recv-keys 85A3D26506C4AE2A
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90 
 sudo dpkg -i multimedia-keyring_all.deb
 
 # Create backup and install repositories
