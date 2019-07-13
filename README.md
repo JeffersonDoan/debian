@@ -16,3 +16,7 @@ This script will:
 8. Remove extra files during setup
 
 Run `rm ./setup.sh` after the setup is finished to delete the script.
+
+## TO DO:
+1. Install Discord automatically
+2. Install Bitwarden automatically
