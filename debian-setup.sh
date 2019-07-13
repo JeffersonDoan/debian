@@ -8,7 +8,7 @@ cd ~
 # Install repositories
 sudo cp /etc/apt/sources.list{,.bak}
 cd /etc/apt
-wget https://raw.githubusercontent.com/JeffersonDoan/fedora-setup/master/sources.list #> /etc/apt/sources.list
+wget https://raw.githubusercontent.com/JeffersonDoan/debian-setup/master/sources.list #> /etc/apt/sources.list
 
 # Update cache for package installs
 #sudo dnf makecache
