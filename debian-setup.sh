@@ -17,6 +17,9 @@ sudo cp /etc/apt/sources.list{,.bak}
 sudo cp ./sources.list /etc/apt/sources.list
 rm ./sources.list
 
+# Add 32bit arch (Steam support)
+sudo dpkg --add-architecture i386
+
 # Full package update
 sudo apt update
 
