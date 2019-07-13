@@ -17,6 +17,6 @@ This script will:
 
 Run `rm ./setup.sh` after the setup is finished to delete the script.
 
-## TO DO:
+### TO DO:
 1. Install Discord automatically
 2. Install Bitwarden automatically
