@@ -6,11 +6,10 @@ cd ~
 #wget https://raw.githubusercontent.com/JeffersonDoan/fedora-setup/master/debian.packages
 
 # Install repositories
-cd /etc/apt
 sudo cp /etc/apt/sources.list{,.bak}
-wget https://raw.githubusercontent.com/JeffersonDoan/debian-setup/master/sources.list > /etc/apt/sources.list.d
-sudo rm sources.list
-cd ~
+wget https://raw.githubusercontent.com/JeffersonDoan/debian-setup/master/sources.list
+sudo cp /sources.list /etc/apt/sources.list
+
 
 # Update cache for package installs
 #sudo dnf makecache
